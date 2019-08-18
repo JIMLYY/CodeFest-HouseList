@@ -1,9 +1,31 @@
 {% load static %}
+<link rel="<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="{% static 'css/housetemplate.css' %}">
+			<link rel="stylesheet" type="text/css" href="housetemplate.css">
+	</head>
+	<body>
+	<br>
+	<font size = "120px" style = "padding: 40px">Properties in Byran</font>
 <div>
+	<div tag="column">
 	{% for post in object_list %}
-	    <a href = "{% url 'post_detail' post.id %}">
-	        <img src="/{{post.image}}">
-	    </a>
+		<div id="test">
+			<a href = "{% url 'post_detail' post.id %}">
+				
+				<img id='displayed' src="/{{post.image}}" >
+			</a>
+		</div>
 	{% endfor %}
+	</div>
 </div> 
+
+
+</body>
