@@ -13,9 +13,11 @@
 	</head>
 	<body>
 	<br>
-	<font size = "120px" style = "padding: 40px">Properties in Byran</font>
-<div>
-	<div tag="column">
+<div style="text-align:center">
+
+	<div tag="column" style="max-width:50%;display: inline-block;">
+	<img src="https://i.imgur.com/xexGuhV.png" style="max-width: 100%">
+	<font size = "120px" style = "padding: 40px">Your Properties</font>
 	{% for post in object_list %}
 		<div id="test">
 			<a href = "{% url 'post_detail' post.id %}">
